@@ -59,7 +59,7 @@ Once you run flake8, you can have something like::
 Changes
 -------
 
-0.1 (unreleased)
+0.1dev0 (10-19-2015)
 ````````````````
 * First release
 
