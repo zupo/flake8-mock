@@ -7,7 +7,7 @@ methods is called, like assert_called_once_with. But it won’t do real work whe
 you call a method that only resembles a convenience method, such as
 assert_called_once (no _with!). Sometimes the developer may not notice that
 is using an non-existent method because is not getting an output error telling
-him that. And for some reason can also forget to try the test cases to fail
+him so. And for some reason can also forget to try the test cases to fail
 making sure that also fails!.
 
 This plugin provides checking possible non-existent methods for ``flake8``,
