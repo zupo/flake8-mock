@@ -24,7 +24,7 @@ setup(
     version=get_version(),
     description="Provides checking mock non-existent methods",
     long_description=get_long_description(),
-    keywords='flake8 mock',
+    keywords=['flake8', 'mock', 'testing'],
     author='Alejandro Pereira',
     author_email='alepereira.dev@gmail.com',
     url='https://github.com/aleGpereira/flake8-mock',
