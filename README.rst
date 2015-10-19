@@ -17,10 +17,10 @@ the Python code checker.
 Installation
 ------------
 
-You can install or upgrade ``flake8-debugger`` with these commands::
+You can install or upgrade ``flake8-mock`` with these commands::
 
-  $ pip install flake8-debugger
-  $ pip install --upgrade flake8-debugger
+  $ pip install flake8-mock
+  $ pip install --upgrade flake8-mock
 
 
 List of non-existent methods checked
@@ -37,11 +37,11 @@ List of non-existent methods checked
 Plugin for Flake8
 -----------------
 
-When both ``flake8 2.2`` and ``flake8-mock`` are installed, the plugin is
+When both ``flake8 2.4`` and ``flake8-mock`` are installed, the plugin is
 available in ``flake8``::
 
     $ flake8 --version
-    2.0 (pep8: 1.5.7, flake8-mock: 0.1dev, pyflakes: 0.8.1)
+    2.4.1 (pep8: 1.5.7, flake8-mock: 0.1, pyflakes: 0.8.1)
 
 
 Example output
@@ -59,7 +59,7 @@ Once you run flake8, you can have something like::
 Changes
 -------
 
-0.1dev (unreleased)
+0.1 (unreleased)
 ````````````````
 * First release
 
