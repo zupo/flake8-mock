@@ -17,8 +17,8 @@ NON_EXISTENT_METHODS = [
     'called_once',
     'called_once_with',
 ]
-_code = 'T002'  # Not Defined yet
-ERROR_MESSAGE = "T002 %s is a non-existen method."
+MOCK_ERROR_CODE = 'M001'
+ERROR_MESSAGE = "%s %s is a non-existen method."
 
 
 def get_noqa_lines(code):
@@ -42,7 +42,7 @@ class MockChecker(object):
         if (node.lineno not in self.noqa_lines) \
            and node.attrname in NON_EXISTENT_METHODS:
             self.errors.append({
-                "message": ERROR_MESSAGE % node.attrname,
+                "message": ERROR_MESSAGE % (MOCK_ERROR_CODE, node.attrname),
                 "line": node.lineno,
             })
 

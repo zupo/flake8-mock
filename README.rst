@@ -50,10 +50,10 @@ Example output
 Once you run flake8, you can have something like::
 
     $ flake8 test_file.py
-    test_file.py:27:1: T002 assert_calls is a non-existen method.
-    test_file.py:28:1: T002 called_once_with is a non-existen method.
-    test_file.py:39:1: T002 not_called is a non-existen method.
-    test_file.py:40:1: T002 assert_called is a non-existen method.
+    test_file.py:27:1: M001 assert_calls is a non-existen method.
+    test_file.py:28:1: M001 called_once_with is a non-existen method.
+    test_file.py:39:1: M001 not_called is a non-existen method.
+    test_file.py:40:1: M001 assert_called is a non-existen method.
 
 
 Changes
