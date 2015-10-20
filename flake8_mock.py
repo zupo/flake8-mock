@@ -18,7 +18,7 @@ NON_EXISTENT_METHODS = [
     'called_once_with',
 ]
 MOCK_ERROR_CODE = 'M001'
-ERROR_MESSAGE = "%s %s is a non-existen method."
+ERROR_MESSAGE = "%s %s is a non-existent mock method."
 
 
 def get_noqa_lines(code):
