@@ -22,7 +22,7 @@ def get_long_description():
 setup(
     name='flake8-mock',
     version=get_version(),
-    description="Provides checking mock non-existent methods",
+    description="Provides checking for non-existent mock methods",
     long_description=get_long_description(),
     keywords=['flake8', 'mock', 'testing'],
     author='Alejandro Pereira',
