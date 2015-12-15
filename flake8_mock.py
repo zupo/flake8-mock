@@ -2,11 +2,11 @@
 
 from sys import stdin
 
-import compiler
+import ast
 import tokenize
 
 
-__version__ = '0.1'
+__version__ = '0.2dev0'
 
 NON_EXISTENT_METHODS = [
     'assert_calls',
@@ -38,18 +38,21 @@ class MockChecker(object):
         self.filename = (filename == 'stdin' and stdin) or filename
         self.errors = []
 
-    def visitGetattr(self, node):
-        if (node.lineno not in self.noqa_lines) \
-           and node.attrname in NON_EXISTENT_METHODS:
-            self.errors.append({
-                "message": ERROR_MESSAGE % (MOCK_ERROR_CODE, node.attrname),
-                "line": node.lineno,
-            })
-
     def run(self):
         with open(self.filename, 'r') as file_to_check:
-            self.noqa_lines = get_noqa_lines(file_to_check.readlines())
-        ast = compiler.parseFile(self.filename)
-        compiler.walk(ast, self)
+            node_ast = file_to_check.read()
+            self.noqa_lines = get_noqa_lines(node_ast)
+        module = ast.parse(node_ast)
+        walking = ast.walk(module)
+        for node in walking:
+            if isinstance(node, ast.Expr) and isinstance(node.value, ast.Call):
+                if (node.lineno not in self.noqa_lines) and \
+                   hasattr(node.value.func, 'attr') and \
+                   node.value.func.attr in NON_EXISTENT_METHODS:
+                    self.errors.append({
+                        "message": ERROR_MESSAGE % (
+                            MOCK_ERROR_CODE, node.value.func.attr),
+                        "line": node.lineno,
+                    })
         for error in self.errors:
             yield (error.get("line"), 0, error.get("message"), type(self))
