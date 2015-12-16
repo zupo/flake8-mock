@@ -44,7 +44,7 @@ When both ``flake8 2.4`` and ``flake8-mock`` are installed, the plugin is
 available in ``flake8``::
 
     $ flake8 --version
-    2.4.1 (pep8: 1.5.7, flake8-mock: 0.1, pyflakes: 0.8.1)
+    2.4.1 (pep8: 1.5.7, flake8-mock: 0.2, pyflakes: 0.8.1)
 
 
 Example output
@@ -60,13 +60,17 @@ Once you run flake8, you can have something like::
 
 Credits
 -------
-    * Alejandro Gabriel Pereira (`NiteoWeb Ltd. <http://www.niteoweb.com>`_) is the main author.
+    * Alejandro Gabriel Pereira is the main author.
     * Nejc Zupan (`NiteoWeb Ltd. <http://www.niteoweb.com>`_) provided the idea
       and proof-reading.
 
 
 Changes
 -------
+
+0.2 (12-16-2015)
+````````````````
+* Add Python 3 compatibility.
 
 0.1 (10-20-2015)
 ````````````````
