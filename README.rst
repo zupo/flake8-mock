@@ -29,9 +29,6 @@ List of non-existent methods checked
 ------------------------------------
 
     * ``assert_calls``
-    * ``assert_not_called``
-    * ``assert_called``
-    * ``assert_called_once``
     * ``not_called``
     * ``called_once``
     * ``called_once_with``
