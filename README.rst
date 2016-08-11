@@ -1,9 +1,9 @@
 Flake8 Mock plugin
 ==================
 
-Remember that a mock’s job is to say, “You got it, boss” whenever anyone calls
+Remember that a mock's job is to say, "You got it, boss" whenever anyone calls
 it. It will do real work, like raising an exception, when one of its
-convenience methods is called, like ``assert_called_once_with``. But it won’t
+convenience methods is called, like ``assert_called_once_with``. But it won't
 do real work when you call a method that only *resembles* a convenience method,
 such as ``assert_called_once`` (no ``_with``!). Sometimes developers may not
 notice that they are using a non-existent mock method, because they are not
