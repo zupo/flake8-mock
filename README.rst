@@ -41,7 +41,7 @@ When both ``flake8 2.4`` and ``flake8-mock`` are installed, the plugin is
 available in ``flake8``::
 
     $ flake8 --version
-    2.4.1 (pep8: 1.5.7, flake8-mock: 0.2, pyflakes: 0.8.1)
+    2.4.1 (pep8: 1.5.7, flake8-mock: 0.3, pyflakes: 0.8.1)
 
 
 Example output
@@ -61,9 +61,19 @@ Credits
     * Nejc Zupan (`NiteoWeb Ltd. <http://www.niteoweb.com>`_) provided the idea
       and proof-reading.
 
+Collaborators
+-------------
+    * `John Vandenberg <https://github.com/jayvdb>`_
+    * `Tom Prince <https://github.com/tomprince>`_
+
 
 Changes
 -------
+
+0.3 (09-10-2016)
+````````````````
+* Don't warn on `assert_not_called`, `assert_called` or `assert_called_once`.
+* Use ASCII only in README.rst
 
 0.2 (12-16-2015)
 ````````````````
@@ -76,4 +86,3 @@ Changes
 0.1dev0 (10-19-2015)
 ````````````````````
 * First dev release.
-
