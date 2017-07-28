@@ -13,6 +13,7 @@ NON_EXISTENT_METHODS = [
     'not_called',
     'called_once',
     'called_once_with',
+    'has_calls',
 ]
 MOCK_ERROR_CODE = 'M001'
 ERROR_MESSAGE = "%s %s is a non-existent mock method."
