@@ -33,7 +33,7 @@ setup(
     zip_safe=False,
     entry_points={
         'flake8.extension': [
-            'flake8_mock = flake8_mock:MockChecker',
+            'M = flake8_mock:MockChecker',
         ],
     },
     classifiers=[
