@@ -6,7 +6,7 @@ import ast
 import tokenize
 
 
-__version__ = '0.3'
+__version__ = '0.4'
 
 NON_EXISTENT_METHODS = [
     'assert_calls',

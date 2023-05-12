@@ -37,11 +37,11 @@ List of non-existent methods checked
 Plugin for Flake8
 -----------------
 
-When both ``flake8 2.4`` and ``flake8-mock`` are installed, the plugin is
+When both ``flake8`` and ``flake8-mock`` are installed, the plugin is
 available in ``flake8``::
 
     $ flake8 --version
-    2.4.1 (pep8: 1.5.7, flake8-mock: 0.3, pyflakes: 0.8.1)
+    5.0.4 (flake8-mock: 0.4, ...)
 
 
 Example output
@@ -69,6 +69,10 @@ Collaborators
 
 Changes
 -------
+
+0.4 (05-12-2023)
+````````````````
+* Fix compatibility with flake8 >= 5.0.0.
 
 0.3 (09-10-2016)
 ````````````````
