@@ -57,14 +57,16 @@ Once you run flake8, you can have something like::
 
 Credits
 -------
-    * Alejandro Gabriel Pereira is the main author.
-    * Nejc Zupan (`NiteoWeb Ltd. <http://www.niteoweb.com>`_) provided the idea
+    * `Alejandro Gabriel Pereira <https://github.com/aleGpereira>`_ is the main author.
+    * `Nejc Zupan <https://github.com/zupo>`_ (`Niteo <https://niteo.co>`_) provided the idea
       and proof-reading.
 
 Collaborators
 -------------
     * `John Vandenberg <https://github.com/jayvdb>`_
     * `Tom Prince <https://github.com/tomprince>`_
+    * `Gasper Vozel <https://github.com/karantan>`_
+    * `Bjørnar Myrheim <https://github.com/myrheimb>`_
 
 
 Changes
